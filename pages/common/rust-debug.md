@@ -5,4 +5,3 @@
 - Failed to execute tool `size`:
 
 `rustup component add llvm-tools-preview`
-
