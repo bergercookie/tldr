@@ -34,3 +34,7 @@
 - Build only the specified binary:
 
 `cargo --bin {{name}}`
+
+- Emit the object code (will also link):
+
+`cargo rustc --target thumbv7m-none-eabi -- --emit=obj`

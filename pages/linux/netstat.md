@@ -15,6 +15,10 @@
 
 `netstat --tcp`
 
+- Print network information in ifconfig-like format
+
+`netstat -ie`
+
 - Display PID and program names:
 
 `netstat --program`

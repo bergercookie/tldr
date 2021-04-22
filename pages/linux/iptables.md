@@ -3,9 +3,17 @@
 > Program that allows configuration of tables, chains and rules provided by the Linux kernel firewall.
 > More information: <https://www.netfilter.org/projects/iptables/>.
 
-- View chains, rules, and packet/byte counters for the filter table:
+- List all rules in iptables-save style:
+
+`iptables -S`
+
+- View chains, rules, and packet/byte counters of the `filter` table:
 
 `sudo iptables -vnL`
+
+- Add a LOG rule - view logs in `journalctl` or `/var/log/kern.log`:
+
+`sudo iptables -t nat -A POSTROUTING -j LOG --log-prefix "NAT3:" --log-level 7`
 
 - Set chain policy rule:
 
@@ -18,6 +26,10 @@
 - Append rule to chain policy for IP considering protocol and port:
 
 `sudo iptables -A {{chain}} -s {{ip}} -p {{protocol}} --dport {{port}} -j {{rule}}`
+
+- Show iptables configuration with line numbers:
+
+`sudo iptables iptables -nL -v --line-numbers -t nat`
 
 - Delete chain rule:
 

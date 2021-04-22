@@ -6,6 +6,10 @@
 
 `xinput list`
 
+- Set the acceleration speed for a mouse:
+
+`xinput --set-prop {{id}} 'libinput Accel Speed' {{vall-between-0-1}}
+
 - Disable an input:
 
 `xinput disable {{id}}`

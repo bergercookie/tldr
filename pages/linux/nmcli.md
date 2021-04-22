@@ -18,3 +18,7 @@
 - Execute an `nmcli` command:
 
 `nmcli {{command}}`
+
+- Remove a network-manager connection by name:
+
+`nmcli c delete id <connection-id>`

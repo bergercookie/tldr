@@ -3,6 +3,10 @@
 > Convert and copy a file.
 > More information: <https://www.gnu.org/software/coreutils/dd>.
 
+- Create the backup for an SD card:
+
+`dd if={{/dev/mmcblk0}} of={{name-of-backup-file.img conv=notrunc,noerror status=progress`
+
 - Make a bootable usb drive from an isohybrid file (such like `archlinux-xxx.iso`) and show the progress:
 
 `dd if={{file.iso}} of=/dev/{{usb_drive}} status=progress`

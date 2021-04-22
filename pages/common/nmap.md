@@ -4,6 +4,14 @@
 > Some features only activate when Nmap is run with privileges.
 > More information: <https://nmap.org>.
 
+- Scan all ports aggressively and using SYN packages (faster than the default CONNECT scan):
+
+`sudo nmap -Pn -sS -T5 -p- {{ip_or_hostname}}`
+
+- Ping-sweep a network to find live hosts:
+
+`nmap  -sn  {{192.168.1.0/24}}`
+
 - Check if an IP address is up, and guess the remote host's operating system:
 
 `nmap -O {{ip_or_hostname}}`

@@ -3,9 +3,21 @@
 > Netcat is a versatile utility for working with TCP or UDP data.
 > More information: <https://nmap.org/ncat>.
 
-- Listen on a specified port and print any data received:
+- (BSD netcat) Listen on a specified port and print any data received:
 
 `nc -l {{port}}`
+
+- (BSD netcat) Listen on a specified port over UDP and print any data received:
+
+`nc -u -l {{port}}`
+
+- Listen on a specified port and print any data received:
+
+`nc -l -p {{port}}`
+
+- Setup a reverse shell
+
+`nc -nvl -k -p {{port}} -e /bin/bash`
 
 - Connect to a certain port:
 
@@ -17,7 +29,16 @@
 
 - Keep the server up after the client detaches:
 
-`nc -k -l {{port}}`
+`nc -k -l -p {{port}}`
+
+- Serve a file:
+
+`nc -l -p {{port}} < {{file}}`
+
+- Receive a file:
+
+`nc {{ip_address}} {{port}} > {{file}}`
+
 
 - Keep the client up even after EOF:
 
@@ -29,4 +50,4 @@
 
 - Act as proxy and forward data from a local TCP port to the given remote host:
 
-`nc -l {{local_port}} | nc {{hostname}} {{remote_port}}`
+`nc -l -p {{local_port}} | nc {{hostname}} {{remote_port}}`

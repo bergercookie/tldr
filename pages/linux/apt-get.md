@@ -12,6 +12,10 @@
 
 `apt-get install {{package}}`
 
+- Install specific version of package (in verbose mode):
+
+`apt-get install {{package}}={{version}} -V`
+
 - Remove a package:
 
 `apt-get remove {{package}}`

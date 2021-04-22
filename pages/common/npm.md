@@ -28,6 +28,10 @@
 
 `npm uninstall {{module_name}}`
 
+- Get the path to all your installed globally libraries:
+
+`npm config get prefix`
+
 - Print a tree of locally-installed dependencies:
 
 `npm list`

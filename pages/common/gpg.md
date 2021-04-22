@@ -8,6 +8,10 @@
 
 `gpg --clearsign {{doc.txt}}`
 
+- Decrypt a gpg file by providing a passphrase:
+
+`gpg --batch --passphrase {{passphrase}} -d {{file.txt.gpg}}`
+
 - Encrypt `doc.txt` for alice@example.com (output to `doc.txt.gpg`):
 
 `gpg --encrypt --recipient {{alice@example.com}} {{doc.txt}}`

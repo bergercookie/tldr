@@ -6,6 +6,10 @@
 
 `add-apt-repository {{repository_spec}}`
 
+- Remove an apt repository (example use):
+
+`add-apt-repository --remove ppa:mc3man/mpv-tests`
+
 - Remove an apt repository:
 
 `add-apt-repository --remove {{repository_spec}}`

@@ -34,3 +34,7 @@
 - Kill a session by name:
 
 `tmux kill-session -t {{name}}`
+
+- List all the active key bindings:
+
+`tmux list-keys`

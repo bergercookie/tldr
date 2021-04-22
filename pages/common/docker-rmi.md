@@ -18,3 +18,7 @@
 - Remove an image without deleting untagged parents:
 
 `docker rmi --no-prune {{image}}`
+
+- Remove all docker images:
+
+`docker rmi $(docker images -q)`

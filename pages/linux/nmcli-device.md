@@ -3,6 +3,10 @@
 > Hardware device management with NetworkManager.
 > More information: <https://man.archlinux.org/man/nmcli.1>.
 
+- Find the IPv4 DNS configuration of a certain interface:
+
+`nmcli device show {{interfacename}} | grep IP4.DNS`
+
 - Print the statuses of all network interfaces:
 
 `nmcli device status`

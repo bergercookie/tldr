@@ -15,6 +15,10 @@
 
 `git help {{subcommand}}`
 
+- Execute a git command that uses SSH in verbose mode:
+
+`GIT_SSH_COMMAND="ssh -v" git {{subcommand}}`
+
 - Execute a Git subcommand:
 
 `git {{subcommand}}`

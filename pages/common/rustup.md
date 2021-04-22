@@ -27,3 +27,7 @@
 - Run cargo build with a certain toolchain:
 
 `rustup run {{toolchain_name}} cargo build`
+
+- List all rustup-installed components:
+
+`rustup component list --installed`

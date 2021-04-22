@@ -23,3 +23,7 @@
 - Convert images to individual PDF pages:
 
 `magick {{*.jpg}} +adjoin {{page-%d.pdf}}`
+
+- Compress an image:
+
+`magick source.jpg -strip -interlace Plane -gaussian-blur 0.05 -quality 85% result.jpg`

@@ -19,6 +19,10 @@
 
 `git stash list`
 
+- Create a named stash:
+
+`git stash save "my_stash"`
+
 - Apply a stash (default is the latest, named stash@{0}):
 
 `git stash apply {{optional_stash_name_or_commit}}`

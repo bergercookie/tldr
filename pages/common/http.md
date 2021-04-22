@@ -19,6 +19,18 @@
 
 `http {{HEAD}} {{example.org}}`
 
+- Upload a file using redirection:
+
+`http {{example.org}} < {{path/to/file}}`
+
+- Download a file using redirection:
+
+`http pie.dev/image/png > image.png`
+
+- Have a persistent session across requests:
+
+`http --session=logged-in -a {{username:password}} {{example.org/get}} {{API-Key:123`}}
+
 - Include an extra header:
 
 `http {{example.org}} {{X-MyHeader:123}}`

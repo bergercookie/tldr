@@ -7,9 +7,13 @@
 
 `nasm {{source.asm}}`
 
-- Assemble `source.asm` into a binary file `output_file`, in the specified format:
+- Assemble `source.asm` into a binary file `output_file`, in the ELF64 format:
 
-`nasm -f {{format}} {{source.asm}} -o {{output_file}}`
+`nasm -f elf64 {{source.asm}} -o {{output_file}}`
+
+- Assemble `source.asm` into a binary file `output_file`, with debugging symbols:
+
+`nasm -f {{format}} {{source.asm}} -F dwarf -g -o {{output_file}}`
 
 - List valid output formats (along with basic nasm help):
 

@@ -3,6 +3,10 @@
 > Download objects and refs from a remote repository.
 > More information: <https://git-scm.com/docs/git-fetch>.
 
+- Fetch the changes of a pull-request branch:
+
+`git fetch {{origin}} pull/{{pr-id}}/head:{{local_branch}}`
+
 - Fetch the latest changes from the default remote upstream repository (if set):
 
 `git fetch`

@@ -6,6 +6,10 @@
 
 `dpkg-query -l`
 
+- List all installed packages, sorted by size:
+
+`dpkg-query -Wf '${Installed-Size}\t${Package}\n' | sort -n`
+
 - List installed packages matching a pattern:
 
 `dpkg-query -l '{{pattern}}'`

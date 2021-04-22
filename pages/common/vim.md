@@ -4,6 +4,14 @@
 > Pressing `i` enters edit mode. `<Esc>` goes back to normal mode, which doesn't allow regular text insertion.
 > More information: <https://www.vim.org>.
 
+- Delete all lines containing a string:
+
+`:g/{{regex}}/d`
+
+- Replace tabs with spaces:
+
+`:set et|retab`
+
 - Open a file:
 
 `vim {{path/to/file}}`

@@ -4,6 +4,10 @@
 > Changes are applied directly to the original file.
 > More information: <https://imagemagick.org/script/mogrify.php>.
 
+- Strip EXIF data from image:
+
+`mogrify -strip {{*.jpg}}`
+
 - Resize all JPEG images in the directory to 50% of their initial size:
 
 `mogrify -resize {{50%}} {{*.jpg}}`

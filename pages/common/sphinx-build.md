@@ -10,3 +10,7 @@
 - Build documentations intended for readthedocs.io (requires the sphinx-rtd-theme pip package):
 
 `sphinx-build -b {{html}} {{path/to/docs_dir}} {{path/to/build_dir}}`
+
+- Check for broken external links in rst documents (0 on success):
+
+`sphinx-build -b linkcheck {{path/to/source_dir}} {{path/to/build_dir}}`

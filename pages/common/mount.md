@@ -6,6 +6,14 @@
 
 `mount`
 
+Mount a partition of an image found at a certain offset:
+
+`sudo mount -o loop,offset={{offset-in-bytes}} {{path/to/image}} {{mountpoint}}`
+
+- Remount root with read-write permissions:
+
+`mount -o remount,rw /`
+
 - Mount a device to a directory:
 
 `mount -t {{filesystem_type}} {{path/to/device_file}} {{path/to/target_directory}}`

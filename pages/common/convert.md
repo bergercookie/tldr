@@ -30,3 +30,11 @@
 - Create an image with nothing but a solid background:
 
 `convert -size {{800x600}} "xc:{{#ff0000}}" {{image.png}}`
+
+- Rotate an image clockwise:
+
+`convert {{image1.png}} -rotate {{degrees}}  {{image2.png}}`
+
+- Compress an image:
+
+`convert -strip -interlace Plane -gaussian-blur 0.05 -quality 85% source.jpg result.jpg`

@@ -15,13 +15,17 @@
 
 `fastboot reboot bootloader`
 
-- Flash a given image:
+- Flash a given image (should include boot, vendor, system etc.):
 
 `fastboot flash {{file.zip}}`
 
 - Flash a custom recovery image:
 
-`fastboot flash recovery {{file.img}}`
+`fastboot flash recovery {{recovery.img}}`
+
+- Flash a custom boot image:
+
+`fastboot flash boot {{boot.img}}`
 
 - Display connected devices:
 

@@ -30,3 +30,19 @@
 - Set and export environmental variables that persist across shell restarts (from within the shell only):
 
 `set -Ux {{variable_name}} {{variable_value}}`
+
+- Check size/length of an array:
+
+`count {{some_array}}`
+
+- Check argc (size of argv) - doesn't include program name:
+
+`if test (count $argv) -lt 2`
+
+- Check the exit status of all the commands that ran in a pipe:
+
+`pipestatus`
+
+- Check the name of the current function:
+
+`(status current-function)`

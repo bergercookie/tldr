@@ -7,6 +7,10 @@
 
 `npx {{module_name}}`
 
+- Run react-app with npx:
+
+`npx craete-react-app {{my-app}} --template typescript`
+
 - In case a package has multiple binaries, specify the package name along with the binary:
 
 `npx -p {{package_name}} {{module_name}}`

@@ -3,6 +3,10 @@
 > Web server scanner which performs tests against web servers for multiple items.
 > More information: <https://cirt.net/Nikto2>.
 
+- Perform a scan - save the results:
+
+`nikto -h {{ip}} -o {{nikto-report.html}} | tee {{nikto.txt`}}
+
 - Perform a basic Nikto scan against a target host:
 
 `perl nikto.pl -h {{192.168.0.1}}`

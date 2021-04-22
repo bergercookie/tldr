@@ -11,6 +11,10 @@
 
 `awk '/{{foo}}/ {print $2}' {{filename}}`
 
+- Print only the first record (line) and substitute "New" with "Old" in it:
+
+`awk '{ if (NR ~ 1) {gsub("New", "Old"); print}  }' text`
+
 - Print the last column of each line in a file, using a comma (instead of space) as a field separator:
 
 `awk -F ',' '{print $NF}' {{filename}}`

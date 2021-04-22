@@ -31,3 +31,16 @@
 - Build using a specific number of threads (default is the number of CPU cores):
 
 `cargo build -j {{jobs}}`
+
+- Run an executable from the local package:
+
+`cargo run --bin {{binary-name}}`
+
+- Run an example from the local package:
+
+`cargo run --example {{example-name}}`
+
+- Pass a flag to the executable of `cargo run`
+
+`cargo run -- {{--help}}`
+

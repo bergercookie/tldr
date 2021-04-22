@@ -3,6 +3,10 @@
 > Video conversion tool.
 > More information: <https://ffmpeg.org>.
 
+- Fix timestamping issues or dropped frames in a video:
+
+`ffmpeg -i {{myfile.mp4}} -c copy {{fixed.mp4}}`
+
 - Extract the sound from a video and save it as MP3:
 
 `ffmpeg -i {{video.mp4}} -vn {{sound}}.mp3`
@@ -21,7 +25,7 @@
 
 - Trim a video from a given start time mm:ss to an end time mm2:ss2 (omit the -to flag to trim till the end):
 
-`ffmpeg -ss {{mm:ss}} -to {{mm2:ss2}} -i {{video.mp4}} -codec copy {{output.mp4}}`
+`ffmpeg -ss {{mm:ss}} -i {{video.mp4}} -to {{mm2:ss2}} -codec copy {{output.mp4}}`
 
 - Convert AVI video to MP4. AAC Audio @ 128kbit, h264 Video @ CRF 23:
 
